@@ -1,0 +1,86 @@
+.sm-modal-overlay{
+    position: fixed;
+    top:0px;
+    left:0px;
+    width:100%;
+    height:100%;
+
+    background: rgba(0,0,0,.6);
+    text-align: center;
+
+    /*
+    Vertically and horizontally centers dialog box.
+    If browser does not support this, will simply sit slightly off the top...
+    */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sm-modal{
+    display:inline-block;
+    position:relative;
+    width:90%;
+    text-align: left;
+
+    margin-top:20px;
+
+    background: #ffffff;
+    border-radius:3px;
+    box-shadow: 0 3px 15px rgba(0, 0, 0, 0.4), 0 0 5px rgba(0, 0, 0, 0.4);
+}
+
+.sm-modal-titlebar{
+    background: #f4f5f6;
+    color:#777777;
+    font-size:2em;
+    font-weight: bold;
+    border-bottom:1px solid #ddd;
+
+    padding:10px;
+    padding-right:40px;
+
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+}
+
+.sm-modal-titlebar img, .sm-modal-titlebar span{
+    vertical-align: middle;
+}
+
+.sm-modal-body{
+    padding:10px;
+}
+
+.sm-close-btn{
+    display:inline-block;
+    border-radius:5px;
+
+    border:none;
+    font-size:2em;
+    color:#FFF;
+    padding:0px;
+    padding:5px;
+    line-height:20px;
+    text-align: center;
+    cursor: pointer;
+    color:#202020;
+    font-weight:bold;
+    font-family: "Arial Black";
+    background-color:#ddd;
+
+    position:absolute;
+    right:5px;
+    top:15px;
+    transition: all 300ms;
+}
+
+.sm-close-btn:hover{
+    color: #000;
+    background-color:#aaa;
+}
+
+/*Keep this down here so it can override other things...*/
+.sm-hidden{
+    display:none;
+}
